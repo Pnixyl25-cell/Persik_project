@@ -1,28 +1,9 @@
-import Menyapa from './Menyapa.jsx'
+// import Login from "@/Pages/Auth/Login/Login";
+import Mahasiswa from "./Pages/Admin/Mahasiswa/Mahasiswa";
 
-function Biodata({ nama, nim }) {
-    return <>
-        <table border={1}>
-                <tr>
-                    <td>Nama</td>
-                    <td>NIM</td>
-                </tr>
-                <tr>
-                    <td>{nama}</td>
-                    <td>{nim}</td>
-                </tr>
-        </table>
-    </>
+const App = () => {
+    // return <Login />
+    return <Mahasiswa />
 }
-
-function App() {
-    return <> 
-            <Menyapa />
-            <Biodata 
-            nama="Rozaq" 
-            nim="A11.2024.15921"
-            />
-    </>;
-} 
 
 export default App;
