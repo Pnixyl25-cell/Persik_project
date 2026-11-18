@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Navigate, createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -68,6 +69,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <Toaster position="top-right" />
+  <RouterProvider router={router} />
+</React.StrictMode>
 );
